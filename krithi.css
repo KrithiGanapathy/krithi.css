@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+:root {
+  --font: 'Quicksand', sans-serif;
+  --buttonradius: 3px;
+  --buttonpadding: 9px 25px;
+  --fontcolor: #edf0f1;;
+  --logocolor: #bee1ec;
+  --buttoncolor: rgba(0, 136, 169, 1);
+  --buttonhovercolor: rgba(14, 173, 212, 0.8);
+  --backgroundcolor: #24252A;
+  --primary: #35CED6;
+  --secondary: #7527D0;
+  --warning: #DBBB24;
+  --danger: #D63D35;
+  --success: #3B9F1F;
+  --info: #1F58D2;
+}
+* {
+  box-sizing: border-box;
+  color: var(--fontcolor);
+  margin: 0;
+  padding: 0;
+  background-color: var(--backgroundcolor);
+  font-family: var(--font);
+  font-weight: lighter;
+}
+h1 {
+  margin-bottom: 10px;
+}
+.logo {
+  font-size: 30px;
+  color: var(--logocolor);
+  cursor: pointer;
+}
+.navli, a, .button {
+  font-size: 16px;
+  color: var(--fontcolor);
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+.nav-links {
+  list-style: none;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover {
+  color: var(--buttoncolor);
+}
+.button {
+  background: var(--buttoncolor);
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--buttonradius);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button-primary {
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--buttonradius);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background: var(--primary);
+}
+.button-secondary {
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--buttonradius);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background: var(--secondary);
+}
+.button-success {
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--buttonradius);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background: var(--success);
+}
+.button-info {
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--buttonradius);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background: var(--info);
+}
+.button-danger {
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--buttonradius);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background: var(--danger);
+}
+.button-warning {
+  padding: var(--buttonpadding);
+  border: none;
+  border-radius: var(--warning);
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  background: var(--info);
+}
+.button:hover {
+  background-color: var(--buttonhovercolor);
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.mobile {
+  list-style: none;
+  display: none;
+  margin: 0 auto;
+  transition: all 0.3s ease 0s;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+}
+.section {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.primary {
+  background-color: var(--primary);
+}
+.info {
+  background-color: var(--info);
+}
+.success {
+  background-color: var(--success);
+}
+.secondary {
+  background-color: var(--secondary);
+}
+.warning {
+  background-color: var(--warning);
+}
+.danger {
+  color: var(--danger);
+}
+.primary-text {
+  color: var(--primary);
+}
+.info-text {
+  color: var(--info);
+}
+.success-text {
+  color: var(--success);
+}
+.secondary-text {
+  color: var(--secondary);
+}
+.warning-text {
+  color: var(--warning);
+}
+.danger-text {
+  color: var(--danger);
+}
+.textinput, .textarea {
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid var(--fontcolor)
+}
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .container, .section {
+    width: 80%;
+  }
+  .burger {
+    display: inline-block;
+  }
+  .seen {
+    display: block;
+  }
+}
